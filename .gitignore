@@ -1,0 +1,10 @@
+# Python virtual environment
+venv/
+__pycache__/
+
+# Secret files
+client_secret.json
+
+# IDE / Editor specific files
+.idea/
+.vscode/

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Business Profile Viewer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Google Business Profile Info</h1>
+
+        <div id="login-container">
+            <p>Please log in to view your business profiles.</p>
+            <a href="/login" class="button">Login with Google</a>
+        </div>
+
+        <div id="data-container" class="hidden">
+            <a href="/logout" class="button logout-button">Logout</a>
+            <h2>Your Locations</h2>
+            <div id="loader" class="loader"></div>
+            <div id="business-info">
+                </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

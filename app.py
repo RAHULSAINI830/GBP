@@ -13,7 +13,7 @@ SCOPES = ['https://www.googleapis.com/auth/business.manage']
 
 # --- THIS IS THE FINAL, CORRECTED LOGIC ---
 # We hardcode the main production URL to prevent mismatch errors.
-PRODUCTION_URL = "https://gbp-theta.vercel.app" 
+PRODUCTION_URL = "https://gbp-theta.vercel.app"
 
 if os.getenv('VERCEL_URL'):
     # This is the production environment on Vercel
@@ -89,7 +89,6 @@ def get_business_data():
     creds = Credentials(**session['credentials'])
 
     try:
-        # --- TYPO FIX: Changed 'v_1' to 'v1' ---
         account_api = build('mybusinessaccountmanagement', 'v1', credentials=creds)
         info_api = build('mybusinessbusinessinformation', 'v1', credentials=creds)
 
